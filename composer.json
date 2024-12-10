@@ -1,0 +1,51 @@
+{
+    "name": "wubinworks/module-jwt-auth-patch",
+    "description": "Fix the JWT authentication vulnerability on certain Magento 2 versions. Deny tokens issued by old encryption key. If you cannot upgrade Magento or cannot apply the official patch, try this one.",
+    "keywords": [
+        "cve-2024-34102",
+        "cosmic sting",
+        "encryption key",
+        "key rotation",
+        "magento 2",
+        "jwt",
+        "authentication",
+        "patch",
+        "token",
+        "webapi"
+    ],
+    "homepage": "https://www.wubinworks.com",
+    "support": {
+        "issues": "https://github.com/wubinworks/magento2-jwt-auth-patch/issues",
+        "chat": "https://www.wubinworks.com/contact"
+    },
+    "require": {
+        "php": ">=7.3",
+        "magento/magento2-base": ">=2.4.4 <2.4.4-p10 || >=2.4.5 <2.4.5-p9 || >=2.4.6 <2.4.6-p7 || >=2.4.7 <2.4.7-p2"
+    },
+    "suggest": {
+        "wubinworks/module-encryption-key-manager-cli": "A Magento 2 encryption key management utility"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Wubinworks Dev Team",
+            "email": "extension@wubinworks.com",
+            "homepage": "https://www.wubinworks.com/jwt-auth-patch.html",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wubinworks\\JwtAuthPatch\\": ""
+        }
+    }
+}

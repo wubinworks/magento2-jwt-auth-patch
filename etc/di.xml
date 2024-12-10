@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Wubinworks. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\JwtUserToken\Model\SecretBasedJwksFactory">
+        <plugin name="wubinworks_jwtauthpatch_plugin_jwtusertoken_model_secretbasedjwksfactory" type="Wubinworks\JwtAuthPatch\Plugin\JwtUserToken\Model\SecretBasedJwksFactory" />
+    </type>
+</config>
